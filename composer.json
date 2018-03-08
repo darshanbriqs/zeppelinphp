@@ -1,0 +1,25 @@
+{
+    "name": "darshanbriqs/zeppelinphp",
+    "description": "Zeppelin PHP Library",
+    "version": "1.0.0",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Darshan Sanandiya",
+            "email": "darshan.sanandiya@qdata.io"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+	"require-dev": {
+            "phpunit/phpunit": "5.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ZeppelinAPI\\": "src/"
+        },
+        "files": ["src/Zeppelin.php"]
+    }
+}
