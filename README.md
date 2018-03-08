@@ -33,11 +33,11 @@ $obj->note()->all();
 ```sh
 $obj = new ZeppelinAPI\Zeppelin(['baseUrl' => $baseUrl]);
 $data['name'] = 'new note with paragraph';
-$data['paragraphs'] = [
-            ['title' => 'paragraph title1',
-            'text' => 'paragraph text1'],
-            ['title' => 'paragraph title2',
-            'text' => 'paragraph text2']
-        ];
+$data['paragraphs'] = array(
+                        'title' => 'paragraph title1',
+                        'text' => 'paragraph text1',
+                        'title' => 'paragraph title2',
+                        'text' => 'paragraph text2'
+                    );
 $obj->note()->create(data);
 ```
