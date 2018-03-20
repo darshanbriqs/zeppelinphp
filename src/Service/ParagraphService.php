@@ -14,7 +14,7 @@ class ParagraphService extends AbstractService
     /**
     *  Create a new paragraph  
     */
-    public function create( $options = array() ) {
+    public function create( $note_id, $options = array() ) {
         return $this->client->request( 'api/notebook/'.$note_id.'/paragraph', 'post', $options );
     }
     
