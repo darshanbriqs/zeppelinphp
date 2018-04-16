@@ -78,7 +78,7 @@ class NoteService extends AbstractService
     /**
     *  Import a note  
     */
-    public function import() {
+    public function import( $options = array() ) {
         return $this->client->request( 'api/notebook/import', 'post' );   
     }
     
