@@ -68,4 +68,18 @@ class NoteService extends AbstractService
         return $this->client->request( 'api/notebook/'.$note_id.'/clear', 'put' );   
     }
     
+    /**
+    *  Export a note  
+    */
+    public function export( $note_id ) {
+        return $this->client->request( 'api/notebook/export/'.$note_id, 'get' );   
+    }
+    
+    /**
+    *  Import a note  
+    */
+    public function import() {
+        return $this->client->request( 'api/notebook/import', 'post' );   
+    }
+    
 }
