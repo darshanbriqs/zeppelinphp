@@ -82,4 +82,17 @@ class NoteService extends AbstractService
         return $this->client->request( 'api/notebook/import', 'post' );   
     }
     
+    /** 
+    * Get binding data 
+    */ 
+    public function getBind( $note_id ) { 
+        return $this->client->request( 'api/notebook/interpreter/bind/'.$note_id, 'get' ); 
+    } 
+    
+    /** 
+    * Put binding data 
+    */ 
+    public function putBind( $note_id, $options = array() ) { 
+        return $this->client->request( 'api/notebook/interpreter/bind/'.$note_id, 'put', $options ); 
+    }
 }
