@@ -29,6 +29,11 @@ $baseUrl = 'https://www.exampleurl.com';
 $obj = new ZeppelinAPI\Zeppelin(['baseUrl' => $baseUrl]);
 $obj->note()->all();
 ```
+// Reload repository
+```sh
+$obj = new ZeppelinAPI\Zeppelin(['baseUrl' => $baseUrl]);
+$obj->repository()->reload();
+```
 // Example of Create a new note
 ```sh
 $obj = new ZeppelinAPI\Zeppelin(['baseUrl' => $baseUrl]);

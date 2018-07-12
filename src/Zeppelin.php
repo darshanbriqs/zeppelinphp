@@ -124,4 +124,11 @@ class Zeppelin {
     public function paragraph() {
         return $this->get_api('ParagraphService');
     }
+
+    /**
+     * @return RepositoryService
+     */
+    public function repository() {
+        return $this->get_api('RepositoryService');
+    }
 }
